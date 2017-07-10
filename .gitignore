@@ -1,0 +1,12 @@
+.idea
+*.iml
+**/node_modules
+.vscode
+/dist
+npm-debug.log*
+#mac files
+*.DS_Store
+.happypack
+install.cache.json
+yarn.lock
+yarn-error.log
