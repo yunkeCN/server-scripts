@@ -19,6 +19,7 @@ install(err => {
     pm2.start(
         script,
         {
+            mergeLogs: true,
             logDateFormat: 'YYYY-MM-DD HH:mm:ss',
             name,
             output,
