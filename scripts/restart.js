@@ -19,11 +19,11 @@ install(err => {
     pm2.delete(
         script,
         function (err) {
-            if (err) {
-                console.info(err);
-                process.exit(-1);
-                return;
-            }
+            // if (err) {
+            //     console.info(err);
+            //     process.exit(-1);
+            //     return;
+            // }
 
             pm2.start(
                 script,
