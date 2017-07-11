@@ -1,4 +1,12 @@
 const pm2 = require('pm2');
+const program = require('commander');
+
+program
+    .allowUnknownOption(true)
+    .option('-e --env [env]', 'environment')
+    .parse(process.argv);
+
+process.env.YUNKE_ENV = program.env;
 
 module.exports = function (callback) {
     pm2.list(function (err, res) {

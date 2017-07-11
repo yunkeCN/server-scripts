@@ -15,6 +15,9 @@ switch (script) {
             [require.resolve(path.join('../scripts', script))].concat(args),
             { stdio: 'inherit' }
         );
+        if (result.status === 0) {
+            console.info('npm_build_success');
+        }
         process.exit(result.status);
         break;
     }
