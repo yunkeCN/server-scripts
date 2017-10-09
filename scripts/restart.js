@@ -2,7 +2,7 @@ const path = require('path');
 const pm2 = require('pm2');
 const install = require('./install');
 
-install(err => {
+install((err) => {
     if (err) {
         console.info(err);
         process.exit(-1);
@@ -18,7 +18,8 @@ install(err => {
 
     pm2.delete(
         script,
-        function (err) {
+        // eslint-disable-next-line no-unused-vars,no-shadow
+        (err) => {
             // if (err) {
             //     console.info(err);
             //     process.exit(-1);
@@ -34,7 +35,7 @@ install(err => {
                     output,
                     error
                 },
-                function (errInner) {
+                (errInner) => {
                     if (errInner) {
                         console.info(errInner);
                         process.exit(-1);

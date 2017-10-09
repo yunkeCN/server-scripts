@@ -16,7 +16,7 @@ switch (script) {
             { stdio: 'inherit' }
         );
         if (result.status === 0) {
-            console.info('npm_build_success');
+            console.info('server-scripts run success');
         }
         process.exit(result.status);
         break;
