@@ -10,3 +10,4 @@ npm-debug.log*
 install.cache.json
 yarn.lock
 yarn-error.log
+package-lock.json
