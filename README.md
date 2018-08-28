@@ -6,9 +6,13 @@
 
 ```
 server-scripts start {scriptPath}
+
+server-scripts restart {scriptPath}
 ```
 
 如
 ```
 server-scripts start ./app.js
+
+server-scripts restart ./app.js
 ```
