@@ -1,6 +1,6 @@
 {
   "name": "@yued/server-scripts",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "server scripts",
   "main": "./bin/server-scripts.js",
   "bin": {
