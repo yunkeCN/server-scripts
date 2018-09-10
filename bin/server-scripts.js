@@ -13,7 +13,10 @@ switch (script) {
         const result = spawn.sync(
             'node',
             [require.resolve(path.join('../scripts', script))].concat(args),
-            { stdio: 'inherit' }
+            {
+                stdio: 'inherit',
+                cwd: process.cwd(),
+            }
         );
         if (result.status === 0) {
             console.info('server-scripts run success');
