@@ -19,6 +19,9 @@ install((err) => {
     .then(() => {
       pm2.reload(
         script,
+        {
+          updateEnv: true
+        },
         (errInner) => {
           if (errInner) {
             console.info(errInner);
